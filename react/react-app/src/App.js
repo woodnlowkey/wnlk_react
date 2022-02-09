@@ -10,11 +10,11 @@ function App() {
   }, []);
   return (
   <div>
-    <h1>The Coins! +{coins.length}</h1>
-    {loading ? <strong>Loading...</strong> : null}
+    <h1>The Coins! {loading ? "" : `+${coins.length}`}</h1>
+    {loading ? (<strong>Loading...</strong>) : (
     <ol>
       {coins.map((coin) => <li key={coin.id}>{coin.name} ({coin.symbol}) : ${coin.quotes.USD.price} USD</li>)}
-    </ol>
+    </ol>)}
   </div>
   );
 };
