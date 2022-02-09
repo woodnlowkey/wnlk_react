@@ -22,8 +22,8 @@ function Detail() {
                     ) : (
                         <div style={{display: "flex", justifyContent: "space-between"}}>
                             <img style={{borderRadius: "10px"}} src={movie.large_cover_image}/>
-                            <div style={{padding: "30px"}}>
-                                <h2>{movie.title_english}</h2>
+                            <div style={{padding: "50px"}}>
+                                <h1>{movie.title_english}</h1>
                                 <p>{movie.description_full}</p>
                             </div>
                         </div>
